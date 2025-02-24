@@ -9,4 +9,9 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'ng-deploy';
+  response="";
+  sayhello(event : any){
+    const greet = "hello" + event.target.value;
+    this.response = greet;
+  }
 }

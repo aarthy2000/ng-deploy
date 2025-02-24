@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'ng-deploy';
   response="";
   sayhello(event : any){
-    const greet = "hello" + event.target.value;
+    const greet = "hello " + event.target.value;
     this.response = greet;
   }
 }
